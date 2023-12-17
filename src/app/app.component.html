@@ -1,0 +1,39 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <div class="logo">
+      <img src="/assets/logo.png" height="100px" style="padding-top: 40px"/>
+    </div>
+    <div style="width: 80%">
+      <div fxLayout="row wrap" fxLayoutAlign="end start">
+        <button mat-button routerLink="/home">Home</button>
+        <button mat-button routerLink="/contact">Contact</button>
+        <button mat-button routerLink="/about">About</button>
+    </div>
+      </div>
+    
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<br />
+
+<div fxLayout="row wrap">
+  <div fxFlex style="padding: 20px">
+    <mat-card class="mat-elevation-z10">
+      <mat-card-title class="gold center" style="font-size: 38px; padding-top: 10px;">{{ title }}</mat-card-title>
+      <br /><br />
+      <mat-card-content>
+        <router-outlet></router-outlet>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+
+
+
+<div>
+<footer>
+  <div class="gold center" style="height: 20px;">
+    <p>© 2023 Copyright: Ravenclaw Financial LLC</p>
+  </div>
+</footer>
+</div>

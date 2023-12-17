@@ -1,0 +1,40 @@
+
+/* 
+Title: styles.css
+Author: Laurel Condon
+Date: 12/15/2023
+Descriptions: Styles for loan-app 
+*/
+
+@import './theme';
+/* Main Elements */
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+p {
+    font-size: medium;
+}
+
+.gold {
+    color: #946b2d;
+}
+.blue {
+    color:#222f5b
+}
+
+.center {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color:#946b2d;
+}
+a:hover {
+    color:#222f5b;
+}
+
+.mat-icon {
+    color:#946b2d;
+    font-size: 45px;
+}

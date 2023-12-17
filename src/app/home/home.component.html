@@ -1,0 +1,86 @@
+<!--
+    Title: home.html
+Author: Laurel Condon
+Date: 12/15/2023
+Descriptions: Styles for loan-app 
+
+-->
+<mat-card class="mat-elevation-z0">
+    <mat-card-content>
+      <div fxLayout="row wrap">
+        <div fxFlex>
+  
+          <mat-card class="mat-elevation-z8">
+  
+            <mat-card-title ></mat-card-title>
+  
+            <mat-card-content>
+  
+              <!-- Loan Calculator Form -->
+              <form fxLayout="column" [formGroup]="loanDetailsForm">
+  
+                <!-- Loan Amount -->
+                <div *ngIf="loanDetailsForm.get('loanAmount').hasError('pattern') && loanDetailsForm.get('loanAmount').touched">
+                 <div class="msg-error"> Loan Amount must be a numeric value with no punctuation
+                </div>
+                </div>
+  
+                <mat-form-field fxFlex appearance="fill">
+                    <mat-label>Loan Amount</mat-label>
+                    <input matInput type="text" placeholder="Enter Loan Amount, no punctuation" formControlName="loanAmount">
+                  </mat-form-field>
+                  
+                  
+                <!-- Interest Rate -->
+                <div *ngIf="loanDetailsForm.get('interestRate').hasError('pattern') && loanDetailsForm.get('interestRate').touched" class="mat-error font-white">
+                  Must Be a Numeric Value
+                </div>
+  
+                <mat-form-field fxFlex appearance="fill">
+                    <mat-label>Interest Rate</mat-label>
+                    <input matInput type="text" placeholder="Example: 7.2" formControlName="interestRate">
+                  </mat-form-field>
+                
+  
+  
+                <!-- Number of Years -->
+                <div *ngIf="loanDetailsForm.get('numOfYears').hasError('pattern') && loanDetailsForm.get('numOfYears').touched" class="mat-error font-white">
+                  Must Be a Whole Numeric Value
+                </div>
+  
+                <mat-form-field fxFlex appearance="fill">
+                    <mat-label>Number Of Years</mat-label>
+                    <input matInput type="text" placeholder="Must Be A Whole Number" formControlName="numOfYears">
+                  </mat-form-field>
+                
+                  <br />
+                <!-- Calculate and Reset buttons-->
+                <button mat-raised-button color="primary" (click)="calculateResults()">Calculate</button>
+                <br />
+                <button mat-raised-button color="primary" (click)="resetEntries()">Reset</button>
+  
+              </form>
+  
+            </mat-card-content>
+          </mat-card>
+        </div>
+  
+        <!-- Results Area -->
+        <div fxFlex style="padding: 10px">
+          <mat-card class="mat-elevation-z8">
+            <mat-card-title class="blue center">Results:</mat-card-title><br />
+            <mat-card-content class="center"><br />
+  
+              <!-- Result Components -->
+              <app-monthly-payment style="font-size: 48px" class="gold" [monthlyPayment]="monthlyPayment"></app-monthly-payment>
+              <br /><br />
+              <app-interest style="font-size: 48px" class="gold" [interest]="interest"></app-interest>
+              <br /><br />
+  
+            </mat-card-content>
+          </mat-card>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+  
