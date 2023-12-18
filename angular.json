@@ -117,10 +117,8 @@
               "devServerTarget": "loan-app:serve:production"
             }
           }
-        },
-        "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
         }
+       
       }
     }},
   "defaultProject": "loan-app"
