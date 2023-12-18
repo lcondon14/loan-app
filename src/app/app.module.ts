@@ -1,3 +1,12 @@
+/* 
+    =========================================
+    ;Title: home.model.ts
+    ;Author: Laurel Condon
+    ;Date: 12-17-2023
+    ;Description: typescript app module
+    =========================================
+*/
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';

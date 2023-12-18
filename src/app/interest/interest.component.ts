@@ -1,4 +1,11 @@
-// interest.component.ts
+/* 
+    =========================================
+    ;Title: interest.component.ts
+    ;Author: Laurel Condon
+    ;Date: 12-17-2023
+    ;Description: typescript interest component
+    =========================================
+*/
 
 import { Component, Input } from '@angular/core';
 

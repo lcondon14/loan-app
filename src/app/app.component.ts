@@ -1,3 +1,12 @@
+/* 
+    =========================================
+    ;Title: app.component.ts
+    ;Author: Laurel Condon
+    ;Date: 12-17-2023
+    ;Description: typescript app component
+    =========================================
+*/
+
 import { Component } from '@angular/core';
 
 @Component({

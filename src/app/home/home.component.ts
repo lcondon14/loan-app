@@ -1,3 +1,12 @@
+/* 
+    =========================================
+    ;Title: home.component.ts
+    ;Author: Laurel Condon
+    ;Date: 12-17-2023
+    ;Description: typescript home
+    =========================================
+*/
+
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 

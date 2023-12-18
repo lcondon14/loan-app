@@ -1,4 +1,11 @@
-
+/* 
+    =========================================
+    ;Title: monthly-payment.component.ts
+    ;Author: Laurel Condon
+    ;Date: 12-17-2023
+    ;Description: typescript monthly payment
+    =========================================
+*/
 import { Component, Input } from '@angular/core';
 
 @Component({

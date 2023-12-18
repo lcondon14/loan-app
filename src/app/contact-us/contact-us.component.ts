@@ -1,3 +1,11 @@
+/* 
+    =========================================
+    ;Title: contact-us.component.ts
+    ;Author: Laurel Condon
+    ;Date: 12-17-2023
+    ;Description: typescript contact us
+    =========================================
+*/
 import { Component, OnInit } from '@angular/core';
 
 @Component({
